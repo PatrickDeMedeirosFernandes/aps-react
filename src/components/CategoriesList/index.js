@@ -19,15 +19,21 @@ class CategoriesList extends Component {
     return (
       <div>
         <ul>
+
+        <select>
+  
+
           {
             categories.map(item => {
               return (
-                <li key={item.id}>
-                  {item.name}
-                </li>
+            //usar essa forma no formulario
+  <option value="key={item.id}">  {item.name}</option>
+
+
               )
             })
           }
+          </select>
         </ul>
       </div>
     )
