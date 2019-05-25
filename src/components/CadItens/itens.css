@@ -1,0 +1,47 @@
+.container{
+    height: 100vh;
+    width: 100;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(62, 136, 248, 0.884);
+    }
+    
+    .form{
+    
+      display: flex;
+      flex-direction: column;
+      padding: 10px;
+      background-color: bisque;
+      border-radius: 10px;
+    }
+    
+    .input-container{
+      display: flex;
+      flex-direction: column;
+    }
+    
+    imput{
+      border-radius: 4px;
+      outline: none;
+      padding: 2px;
+    border: 5px solid #784598
+    }
+    .btn{
+      width: 20px;
+      height: 20px;
+      border: none;
+      background-color: aqua;
+      margin-top: 10px;
+    }
+    .list{
+      margin: 0;
+      padding: 0;
+    }
+    .list-item{
+      list-style: nome;
+      margin-bottom: 10px;
+    }
+    .list-item:hover{
+      text-decoration: line-through;
+    }

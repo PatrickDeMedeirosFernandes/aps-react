@@ -3,11 +3,11 @@ import { connect } from 'react-redux'
 import { loadCategories } from '../../redux/modules/category'
 
 class CategoriesList extends Component {
-  componentDidMount () {
+  componentDidMount() {
     this.props.loadCategories()
   }
 
-  render () {
+  render() {
     const { categories, isLoading, hasError } = this.props
 
     if (hasError) {
@@ -19,21 +19,29 @@ class CategoriesList extends Component {
     return (
       <div>
         <ul>
-
-        <select>
-  
-
           {
             categories.map(item => {
               return (
+                <li key={item.id}>
+                  {item.name}
+                </li>
+
+                /*
+                    <select>
+                              {
+            categories.map(item => {
+              return (
             //usar essa forma no formulario
+            //
   <option value="key={item.id}">  {item.name}</option>
-
-
               )
             })
           }
           </select>
+                */
+              )
+            })
+          }
         </ul>
       </div>
     )
@@ -51,4 +59,4 @@ const mapDispatchToProps = {
 }
 
 export default
-connect(mapStateToProps, mapDispatchToProps)(CategoriesList)
+  connect(mapStateToProps, mapDispatchToProps)(CategoriesList)
