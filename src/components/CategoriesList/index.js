@@ -20,13 +20,15 @@ class CategoriesList extends Component {
       <div>
         <ul>
           {
+            
+            /*
             categories.map(item => {
               return (
                 <li key={item.id}>
                   {item.name}
-                </li>
+                </li>*/
 
-                /*
+                
                     <select>
                               {
             categories.map(item => {
@@ -38,9 +40,9 @@ class CategoriesList extends Component {
             })
           }
           </select>
-                */
+                /*
               )
-            })
+            })  */
           }
         </ul>
       </div>

@@ -8,7 +8,6 @@ class Home extends Component {
       <Fragment>
         <div>
           <CadItens></CadItens>
-          <CategoriesList />
         </div>
         <div />
       </Fragment>
